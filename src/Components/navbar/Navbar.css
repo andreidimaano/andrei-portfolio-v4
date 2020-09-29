@@ -1,0 +1,92 @@
+.navbar {
+    height: 5rem;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.container {
+    z-index: 1;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+.navbar-logo {
+    color: #FEF1E0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+
+.navbar-button{
+    border-radius: 5px;
+    color: #FEF1E0;
+    font-family: "Consolas";
+    font-weight: 400;
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 100%;
+    padding: 0rem 1rem;
+    margin: 0px 1rem;
+    border: 2px solid #FEF1E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item:hover > a > span{
+    color: #FEF1E0;
+}
+
+a {
+    text-decoration: none;
+}
+.text-color{
+    color: #848EAC;
+    font-family: 'Inconsolata', monospace;
+}
+.number-color{
+    color: #FEF1E0;
+    font-family: 'Inconsolata', monospace;
+}
+
+.resume {
+    color: #FEF1E0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar-button:hover{
+    background-color: #FEF1E0;
+    transition: 0.4s;
+}
+.navbar-button:hover .resume{
+    color: #1D2D44;
+}

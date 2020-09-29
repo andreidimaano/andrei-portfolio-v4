@@ -1,0 +1,27 @@
+.solid{
+    border-top: 3px solid #848EAC;
+    width: 250px;
+    margin-left: 5rem;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: "Consolas";
+    font-weight: 400;
+    font-size: 2rem;
+    
+}
+
+.about-info{
+    display: block;
+    color: #848EAC;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 3rem;
+}
