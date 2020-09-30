@@ -1,0 +1,22 @@
+:root {
+    --accent-color: #FFC49B;
+    --accent-color-tint: rgba(255, 196, 155, 0.15);
+    --navy: #1d2d44;
+    --dark-navy: #1d2d44;
+    --gray: #ADB6C4;
+    --light-gray: #bec9d6;
+    --light-gray-tint: rgba(190, 201, 214,0.5);
+    --light-blue: #CCD6F6;
+    --fz-sm: 16px;
+    --fz-md: 32px;
+    --fz-lg: 64px;
+    --fz-heading: 32px;
+    --font-sans: 'Roboto', sans-serif;
+    --font-mono: 'Inconsolata', monospace;
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+svg {
+    fill: currentcolor;
+    vertical-align: middle;
+}
