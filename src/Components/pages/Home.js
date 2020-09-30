@@ -8,6 +8,7 @@ import Work from "./Work";
 import Contact from "./Contact";
 import Left from "../links/left"
 import Right from "../links/Right"
+import Footer from "./Footer";
 
 function Home() {
     return (
@@ -22,6 +23,7 @@ function Home() {
                     <Experience />
                     <Work />
                     <Contact />
+                    <Footer />
                 </div>
             </div>
         </div>

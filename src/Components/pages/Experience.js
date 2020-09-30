@@ -25,7 +25,7 @@ function Experience() {
                             <a className="inline-link" href="https://www.linkedin.com/company/nex-ii/" rel="noopener noreferrer" target="_blank">nex-ii</a>
                         </span>
                     </h3>
-                    <p class="range">May 2020 - September 2020</p>
+                    <p className="range">May 2020 - September 2020</p>
                     <div>
                         <ul>
                             <li>

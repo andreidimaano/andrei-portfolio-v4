@@ -33,3 +33,9 @@
     margin: 0px auto;
     background-color: var(--light-gray);
 }
+
+@media (max-width: 768px){
+    .left {
+        display: none;
+    }
+}

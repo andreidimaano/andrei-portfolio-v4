@@ -30,3 +30,9 @@
     margin: 0px auto;
     background-color: var(--light-gray);
 }
+
+@media (max-width: 768px){
+    .right {
+        display: none;
+    }
+}
