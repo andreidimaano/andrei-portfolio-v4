@@ -81,11 +81,11 @@
 
 /* images */
 .project .project-image .img{
-    opacity: 60% !important;
+    opacity: 0.6 !important;
 }
 
 .project .project-image .img:hover {
-    opacity: 100% !important;
+    opacity: 1 !important;
 }
 
 .project .project-image{
