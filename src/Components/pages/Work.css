@@ -10,10 +10,6 @@
     margin: auto 0px;
 }
 
-.project:nth-of-type(2n) .project-content {
-    text-align: right;
-}
-
 .project {
     display: flex;
 }
@@ -26,12 +22,6 @@
     font-size:  14px;
     white-space: nowrap;
 }
-
-.project:nth-of-type(2n) .project-tech-list li {
-    margin: 0px 0px 5px 20px;
-    justify-content: flex-end;
-}
-
 
 .project:not(:last-of-type) {
     margin-bottom: 100px;
@@ -55,16 +45,25 @@
     padding-left: 0px;
 }
 
-.project:nth-of-type(2n) .project-description {
-    padding: 25px;
-    padding-right: 0px;
-}
-
 .project .project-tech-list {
     display: flex;
     margin: 25px 0px 10px;
     padding: 0px;
     list-style: none;
+}
+
+.project:nth-of-type(2n) .project-content {
+    text-align: right;
+}
+
+.project:nth-of-type(2n) .project-tech-list li {
+    margin: 0px 0px 5px 20px;
+    justify-content: flex-end;
+}
+
+.project:nth-of-type(2n) .project-description {
+    padding: 25px;
+    padding-right: 0px;
 }
 
 .project:nth-of-type(2n) .project-tech-list {
@@ -116,6 +115,10 @@
     margin-right: 40px;
 }
 
+.mobile-img {
+    display: none;
+}
+
 @media(max-width: 1330px) {
     .project .project-image .img1 {
         display: none;
@@ -134,12 +137,53 @@
 }
 
 @media (max-width:768px) {
-    .project .inner {
+    .web-img {
+        display: none;
+    }
+
+    .project .trieuloo .img2 {
+        margin-left: 0px;
+    }
+
+    .trieuloo .mobile-img, .trieuloo .mobile-img {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .work .inner ,.project {
         display: block;
     }
 
+    .project:nth-of-type(2n) .project-content {
+        text-align: left;
+    }
+    
+    .project:nth-of-type(2n) .project-tech-list li {
+        margin: 0px 0px 5px 20px;
+        justify-content: flex-start;
+    }
+    
+    .project:nth-of-type(2n) .project-description {
+        padding: 25px;
+        padding-left: 0px;
+    }
+    
+    .project:nth-of-type(2n) .project-tech-list {
+        justify-content: flex-start;
+    }
+
+    .project-image {
+        display: flex;
+        justify-content: center;
+    }
+
     .project .img2{
+        width: 200px;
+    }
+
+    .project .dragon .img2{
         margin: auto;
+        margin-bottom: 20px;
         width: 200px;
     }
 }

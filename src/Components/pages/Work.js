@@ -40,6 +40,11 @@ function Work() {
                     </div>
                 </div>
                 <div className="project">
+                    <div className="project-image trieuloo">
+                        <a rel="noopener noreferrer" target="_blank" href={trieuloo.href[1]}>
+                            <img className="mobile-img img img2" src="images/blobfish.png" alt="trieuloo img"/>
+                        </a>
+                    </div>
                     <div className="project-content">
                         <h3 className="project-title">{trieuloo.title}</h3>
                         <p className="project-overline">{trieuloo.overline}</p>
@@ -59,8 +64,8 @@ function Work() {
                         </div>
                     </div>
                     <div className="project-image trieuloo">
-                        <a rel="noopener noreferrer" target="_blank" href={dragon.href[0]}>
-                            <img className=" img img2" src="images/blobfish.png" alt="trieuloo img"/>
+                        <a rel="noopener noreferrer" target="_blank" href={trieuloo.href[1]}>
+                            <img className="web-img img img2" src="images/blobfish.png" alt="trieuloo img"/>
                         </a>
                     </div>
                 </div>
