@@ -52,7 +52,7 @@ function Experience() {
                     <div>
                         <ul>
                             {currentInfo.bulletpoints.map((desc) => (
-                                <li>{desc}</li>
+                                <li key={desc}>{desc}</li>
                             ))}
                         </ul>
                     </div>
@@ -62,19 +62,4 @@ function Experience() {
     )
 }
 
-export default Experience
-
-//function that renders paragraphs
-/*export let jobInfo = {
-    title: "Product Designer"
-    location: "@ nex-ii"
-    date: "May - September 2020"
-    bulletpoints: [
-        "Led design and development of a marketing website and business-to-business platform for startup company, twiine.",
-        "Worked closely with a team of four mobile engineers to design and develop a social medium application using Figma and Flutter",
-        "Championed code excellence and maintainability by simplifying designs and creating reusable components for both web and mobile products",
-        "Mentored interns on design principles, researching designs, and coding practices."
-    ]
-}
-*/
-//<p>{jobInfo.bulletpoints}</p>
+export default Experience;

@@ -2,7 +2,144 @@
     min-height: 100vh;
     margin: 0px auto;
     padding: 100px 0px;
-    max-width: 700px;
+    max-width: 1000px;
     display: block;
 }
 
+.project-content {
+    margin: auto 0px;
+}
+
+.project:nth-of-type(2n) .project-content {
+    text-align: right;
+}
+
+.project {
+    display: flex;
+}
+
+
+.project .project-tech-list li {
+    margin: 0px 20px 5px 0px;
+    color: var(--accent-color);
+    font-family: var(--font-mono);
+    font-size:  14px;
+    white-space: nowrap;
+}
+
+.project:nth-of-type(2n) .project-tech-list li {
+    margin: 0px 0px 5px 20px;
+    justify-content: flex-end;
+}
+
+
+.project:not(:last-of-type) {
+    margin-bottom: 100px;
+}
+
+.project-overline {
+    margin: 10px 0px;
+    color: var(--accent-color);
+    font-family: var(--font-mono);
+    font-size: 14px;
+}
+
+.project-title {
+    color: var(--gray);
+    font-size: clamp(24px, 5vw, 28px);
+    margin-bottom: 0px;
+}
+
+.project-description {
+    padding: 25px;
+    padding-left: 0px;
+}
+
+.project:nth-of-type(2n) .project-description {
+    padding: 25px;
+    padding-right: 0px;
+}
+
+.project .project-tech-list {
+    display: flex;
+    margin: 25px 0px 10px;
+    padding: 0px;
+    list-style: none;
+}
+
+.project:nth-of-type(2n) .project-tech-list {
+    justify-content: flex-end;
+}
+
+.project .project-links a{
+    padding: 10px;
+}
+
+.project-icon:hover {
+    color: var(--accent-color);
+}
+
+/* images */
+.project .project-image .img{
+    opacity: 60%;
+}
+
+.project .project-image .img:hover {
+    opacity: 100%;
+}
+
+.project .project-image{
+    display: flex;
+    align-items: center;
+}
+
+.project .twiine .img1{
+    max-width: 225px;
+}
+
+.project .twiine .img2{
+    max-width: 300px;
+}
+
+.project .trieuloo .img2 {
+    margin-left: 40px;
+    max-width: 444px;
+}
+
+.project .dragon .img2{
+    max-width: 200px;
+    margin-right: 40px;
+}
+
+.project .dragon .img1{
+    max-width: 200px;
+    margin-right: 40px;
+}
+
+@media(max-width: 1330px) {
+    .project .project-image .img1 {
+        display: none;
+    }
+
+    .project .dragon .img2 {
+        margin: 0px 40px;
+    }
+}
+
+@media(max-width: 1180px) {
+    .project .trieuloo .img2 {
+        max-width: 360px;
+        transition: var(--transition);
+    }
+}
+
+@media (max-width:768px) {
+    .project .inner {
+        display: block;
+    }
+
+    .project .img2{
+        margin: auto;
+        width: 200px;
+    }
+}
