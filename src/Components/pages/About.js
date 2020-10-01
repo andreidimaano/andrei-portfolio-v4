@@ -37,7 +37,7 @@ function About() {
                 </div>
                 <div className="about-img">
                     <div className="wrapper">
-                        <img className="img" src="images/Andrei.jpg" alt="Andrei img"/>
+                        <img className="img" src="/public/images/Andrei.jpg " alt="Andrei img"/>
                     </div>
                 </div>
             </div>
