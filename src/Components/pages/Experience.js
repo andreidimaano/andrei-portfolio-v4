@@ -1,45 +1,59 @@
-import React from 'react'
-import "./Experience.css"
+import React ,{ useState } from 'react';
+import "./Experience.css";
+import nexii from "./nexii";
+import rchs from "./rchs";
 
 function Experience() {
+    let [buttonOne, setB1] = useState(true);
+    let [buttonTwo, setB2] = useState(false);
+    let [currentInfo, setInfo] = useState({
+        title: nexii.title,
+        location: nexii.location,
+        date: nexii.date,
+        bulletpoints: nexii.bulletpoints
+    });
+
+    function handleB1() {
+        setB1(true);
+        setB2(false);
+        setInfo(nexii);
+    }
+
+    function handleB2() {
+        setB1(false);
+        setB2(true);
+        setInfo(rchs);
+    }
+
     return (
         <div id="jobs" className="experience">
              <h2 className="heading">Andrei's Experience</h2>
              <div className="inner">
                 <ul className="jobs-list">
                     <li>
-                        <button className="job-item active">
+                        <button onClick={handleB1} className={`job-item ${buttonOne ? "active" : ""}`}>
                             <span>nex-ii</span>
                         </button>
                     </li>
                     <li>
-                        <button className="job-item">
+                        <button onClick={handleB2} className={`job-item ${buttonTwo ? "active" : ""}`}>
                             <span>RCHS</span>
                         </button>
                     </li>
                 </ul>
                 <div className="job-info">
                     <h3>
-                        <span>Product Designer</span>
+                        <span>{currentInfo.title}</span>
                         <span className="company">&nbsp;@&nbsp;
-                            <a className="inline-link" href="https://www.linkedin.com/company/nex-ii/" rel="noopener noreferrer" target="_blank">nex-ii</a>
+                            <a className="inline-link" href={currentInfo.location.href} rel="noopener noreferrer" target="_blank">{currentInfo.location.company}</a>
                         </span>
                     </h3>
-                    <p className="range">May 2020 - September 2020</p>
+                    <p className="range">{currentInfo.date}</p>
                     <div>
                         <ul>
-                            <li>
-                                Led design and development of a marketing website and business-to-business platform for startup company, twiine.
-                            </li>
-                            <li>
-                                Worked closely with a team of four mobile engineers to design and develop a social medium application using Figma and Flutter
-                            </li>
-                            <li>
-                                Championed code excellence and maintainability by simplifying designs and creating reusable components for both web and mobile products
-                            </li>
-                            <li>
-                                Mentored interns on design principles, researching designs, and coding practices.
-                            </li>
+                            {currentInfo.bulletpoints.map((desc) => (
+                                <li>{desc}</li>
+                            ))}
                         </ul>
                     </div>
                 </div>

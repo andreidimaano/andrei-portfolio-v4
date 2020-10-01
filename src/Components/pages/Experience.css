@@ -89,6 +89,6 @@
     background-color: var(--accent-color-tint);
 }
 
-.job-item.active:focus {
-    outline: 0px;
+*:focus {
+    outline: none;
 }
