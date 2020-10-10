@@ -25,6 +25,11 @@
     color: var(--light-gray);
     font-size: 40px;
 }
+
+.left-icon:hover{
+    color: var(--accent-color);
+}
+
 .left-container::after{
     content: "";
     display: block;
