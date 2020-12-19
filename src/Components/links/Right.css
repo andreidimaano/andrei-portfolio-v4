@@ -7,6 +7,12 @@
     z-index: 10;
     color: var(--light-gray);
 }
+
+
+.right:hover {
+    color: var(--accent-color);
+}
+
 .right-container {
     display: flex;
     flex-direction: column;
